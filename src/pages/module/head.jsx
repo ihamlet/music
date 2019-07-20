@@ -1,4 +1,4 @@
-import { WingBlank } from 'antd-mobile'
+import { WingBlank,Icon } from 'antd-mobile'
 import Styles from './head.less'
 
 export const Head = ({title}) => {
@@ -9,8 +9,8 @@ export const Head = ({title}) => {
                     {title}
                 </div>
                 <div className={Styles.search}>
-                    <div className={`textColorMinor ${Styles.searchBar}`}>
-                        搜索
+                    <div className={`flex flexCenter textColorMinor ${Styles.searchBar}`}>
+                        <Icon type='search' size='xxs' /> <div className={Styles.searchBarText}>搜索</div> 
                     </div>
                 </div>
             </div>

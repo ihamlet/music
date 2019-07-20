@@ -9,9 +9,9 @@ import Head from '../pages/module/head'
 class BasicLayout extends Component {
   state = {
     tab: [{
-      title: '标题1'
+      title: '音乐馆'
     }, {
-      title: '标题2'
+      title: '发现'
     }],
     tabActive: 0
   }

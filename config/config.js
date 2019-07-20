@@ -13,7 +13,7 @@ export default {
                 { 
                     path: '/', 
                     component: './../pages/home/home',
-                    title:'音乐馆'
+                    title:'首页'
                 }
             ]
         }
