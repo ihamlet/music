@@ -1,0 +1,41 @@
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: #f7f7f7;
+}
+
+.flex{
+  display: flex;
+  &Center{
+    justify-content: center;
+    align-items:  center;
+  }
+  &VCenter{
+    justify-content: center;
+  }
+  &HCenter{
+    align-items:  center;
+  }
+  &Justified{
+    justify-content: space-between;
+  }
+}
+
+.textColor{
+  color: #606266;
+  &Primary{
+    color: #303133;   
+  }
+  &Minor{
+    color: #909399;
+  }
+  &Placeholder{
+    color: #C0C4CC;
+  }
+}
+
+
