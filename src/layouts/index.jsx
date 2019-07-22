@@ -1,6 +1,6 @@
 
 import React, { Component } from 'react'
-import { NavBar, TabBar, WingBlank } from 'antd-mobile'
+import { TabBar, WingBlank } from 'antd-mobile'
 import 'antd-mobile/dist/antd-mobile.less'
 import Styles from './index.less'
 
@@ -16,6 +16,12 @@ class BasicLayout extends Component {
     tabActive: 0
   }
 
+  setTabActice(index){
+    this.setState({
+      tabActive: index
+    })
+  }
+
   componentDidMount() {
     console.log(this.props)
   }
@@ -23,25 +29,19 @@ class BasicLayout extends Component {
   render() {
 
     let pageTitle = this.props.route.routes[this.state.tabActive].title
+    let nodeDom = this.props.children.props.children[this.state.tabActive]
 
     return (
       <>
-        {
-          this.state.tabActive === 0
-            ? <Head title={pageTitle}/>
-            : <NavBar className={Styles.bar}>
-              {pageTitle}
-            </NavBar>
-        }
-
-        <TabBar barTintColor="white" prerenderingSiblingsNumber={0}>
+        <Head title={pageTitle}/>
+        <TabBar barTintColor="white" prerenderingSiblingsNumber={this.state.tabActive > 1?1:0} >
           {
             this.state.tab.map((e, index) => {
-              return <TabBar.Item key={index} title={e.title}>
+              return <TabBar.Item key={index} title={e.title} onPress={() => this.setTabActice(index)}>
                 <div className={Styles.container}>
                   <WingBlank size='md'>
                     {
-                      this.props.children
+                      nodeDom
                     }
                   </WingBlank>
                 </div>

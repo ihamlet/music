@@ -14,6 +14,11 @@ export default {
                     path: '/', 
                     component: './../pages/home/home',
                     title:'首页'
+                },
+                { 
+                    path: '/list', 
+                    component: './../pages/home/home',
+                    title:'列表'
                 }
             ]
         }
