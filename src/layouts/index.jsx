@@ -34,7 +34,7 @@ class BasicLayout extends Component {
     return (
       <>
         <Head title={pageTitle}/>
-        <TabBar barTintColor="white" prerenderingSiblingsNumber={this.state.tabActive > 1?1:0} >
+        <TabBar barTintColor="white" prerenderingSiblingsNumber={0}>
           {
             this.state.tab.map((e, index) => {
               return <TabBar.Item key={index} title={e.title} onPress={() => this.setTabActice(index)}>
