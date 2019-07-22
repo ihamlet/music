@@ -33,7 +33,7 @@ class BasicLayout extends Component {
 
     return (
       <>
-        <Head title={pageTitle}/>
+        <Head title={pageTitle} />
         <TabBar barTintColor="white" prerenderingSiblingsNumber={0}>
           {
             this.state.tab.map((e, index) => {
