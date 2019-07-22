@@ -18,7 +18,7 @@ export default {
                 { 
                     path: '/list', 
                     component: './../pages/home/home',
-                    title:'列表'
+                    title:'发现'
                 }
             ]
         }
