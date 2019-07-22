@@ -5,6 +5,10 @@ export default {
             dva: true
         }]
     ],
+    theme:{
+        'brand-primary':'#FFC414',
+        'brand-primary-tap':'#ffbf00'
+    },
     routes: [
         {
             path: '/', 
