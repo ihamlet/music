@@ -6,8 +6,8 @@ export default {
         }]
     ],
     theme:{
-        'brand-primary':'#FFC414',
-        'brand-primary-tap':'#ffbf00'
+        'brand-primary':'#fadb14',
+        'brand-primary-tap':'#d4b106'
     },
     routes: [
         {
