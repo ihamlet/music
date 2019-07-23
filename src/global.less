@@ -1,3 +1,16 @@
+// 变亮
+@function tint($color, $percentage) {
+  @return mix(white, $color, $percentage);
+}
+// 变暗
+@function shade($color, $percentage) {
+  @return mix(black, $color, $percentage);
+}
+// 使用
+.useage {
+  background-color: tint(#2db7f5, 80%);
+}
+
 
 html, body, #root, .autoHeight{
   height: 100%;
